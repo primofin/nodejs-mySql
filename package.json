@@ -1,0 +1,30 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"	  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vynmetropolia/nodeJS.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "npm"
+  ],
+  "author": "vy nguyen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vynmetropolia/nodeJS/issues"
+  },
+  "homepage": "https://github.com/vynmetropolia/nodeJS#readme"
+}
+
