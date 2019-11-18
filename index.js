@@ -25,7 +25,8 @@ app.get('/animals', async (req,res) => {
     //res.send(`query param? ${req.query}`);
     try {
         const [results] = await connection.query(
-            `SELECT * FROM animal WHERE name LIKE \'${req.query.name}'`);
+            'SELECT * FROM animal WHERE name LIKE ? OR family LIKE ?',
+            [req.query.name, req.query.family]);
         res.json(results);
         
     } catch(e) {
